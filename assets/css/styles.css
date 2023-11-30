@@ -684,8 +684,16 @@ footer ul li a:hover {
     justify-content: center;
 }
 
-.section-planes{
+.section-planes {
     margin-bottom: 100px;
+}
+
+.encabezado-planes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    align-items: left;
 }
 
 

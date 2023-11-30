@@ -559,6 +559,9 @@ img.img-comillas {
 }
 
 /*--- Nuestros planes HOME ---*/
+.home{
+    text-align: center;
+}
 .tarjeta-plan-home {
     padding: 1.6rem;
     background-color: var(--gris);
@@ -632,3 +635,57 @@ footer ul li a:hover {
 .copyright {
     font-weight: bold;
 }
+
+
+/*-- Javier --*/
+
+.contenedor-planes {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 4.8rem;
+    justify-content: center;
+    padding: 10px;
+}
+
+.columna-3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.columna-3 .col-izq { 
+    flex: 3;
+}
+.columna-3 .col-der{
+    flex: 1;
+}
+
+.planes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
+}
+.planes ul{
+    width:max-content;  
+}
+
+.planes img {
+    width: 20px;
+}
+
+.tarjetas-planes {
+    display: flex;
+    flex-direction: wrap;
+    gap: 8.0rem;
+    justify-content: center;
+}
+
+.section-planes{
+    margin-bottom: 100px;
+}
+
+

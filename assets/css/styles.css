@@ -505,6 +505,12 @@ hr {
     flex-basis: 0;
     flex-grow: 1;
 }
+.tarjeta-profesional {
+    display: flex;
+justify-content: center;
+align-items: flex-start;
+background: var(--morado-light);
+}
 
 .tarjeta .tipo {
     background-color: var(--morado-darker);

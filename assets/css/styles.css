@@ -129,7 +129,7 @@
     --titulo-l: 3.6rem;
     --titulo-m: 2.4rem;
     --titulo-pequeno: 1.8rem;
-    --texto-general: 1.6rem;
+    --texto-general: 1.8rem;
     --text-pequeno: 1.4rem;
 
     /* Effect styles */
@@ -527,7 +527,7 @@ hr {
     background-color: var(--morado-lighter);
     border-radius: 5px;
     position: relative;
-    max-width: 250px;
+    max-width: 300px;
     box-shadow: var(--sombra-tarjeta);
     flex-basis: 190px;
     flex-grow: 1;
@@ -710,9 +710,12 @@ footer ul li a:hover {
 
 .columna-3 .col-izq { 
     flex: 3;
+    flex-basis: 25rem;
 }
 .columna-3 .col-der{
     flex: 1;
+    flex-basis: 25rem;
+
 }
 
 .planes{
@@ -724,14 +727,19 @@ footer ul li a:hover {
 .planes ul{
     width:max-content;  
 }
+.planes ul li{
+margin-bottom: 1.5rem;
+}
+
 
 .planes img {
-    width: 20px;
+    width: 2rem;
+    vertical-align: top;
 }
 
 .tarjetas-planes {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     gap: 8.0rem;
     justify-content: center;
 }

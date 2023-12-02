@@ -184,12 +184,12 @@ img {
     max-width: 26rem;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:not(.disabled):hover,
+.btn:not(.disabled):focus {
     background: var(--veder-degradado);
 }
 
-.btn:focus {
+.btn:not(.disabled):focus {
     box-shadow: none;
 }
 
@@ -227,14 +227,14 @@ img {
 
 }
 
-.btn-tab:hover,
-.btn-tab:focus {
+.btn-tab:not(.disabled):hover,
+.btn-tab:not(.disabled):focus {
     color: var(--morado-darker);
     background: var(--morado-lighter);
     box-shadow: none;
 }
 
-.btn-tab:focus {
+.btn-tab:not(.disabled):focus {
     outline: 2px solid var(--morado-darker);
 }
 

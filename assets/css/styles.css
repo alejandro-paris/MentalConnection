@@ -375,6 +375,15 @@ img.img-ancho-completo {
     justify-content: center;
     align-items: center;
 }
+.foto-miembro-m {
+    display: flex;
+    width: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--sombra-avatar);
+    justify-content: center;
+    align-items: center;
+}
 /*-- Encabezado seccion --*/
 .encabezado-seccion {
     display: flex;
@@ -472,6 +481,22 @@ hr {
     gap: 2.4rem;
     padding: 4.8rem 2.4rem;
     background-color: var(--morado-lighter);
+    border-radius: 5px;
+    position: relative;
+    min-width: 190px;
+    max-width: 250px;
+    box-shadow: var(--sombra-tarjeta);
+    flex-basis: 0;
+    flex-grow: 1;
+}
+.tarjeta_m {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 4.8rem 2.4rem;
+    background-color: var(--gris);
     border-radius: 5px;
     position: relative;
     min-width: 190px;

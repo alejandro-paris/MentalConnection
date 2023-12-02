@@ -151,6 +151,7 @@ html {
     line-height: 1.4;
 }
 
+
 body {
     max-width: 1440px;
     background-color: var(--blanco);
@@ -327,10 +328,12 @@ main {
 /*---- Títulos ---*/
 
 h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 
 }
 
+.titulo-xl,
 .titulo-xl,
 .titulo-l,
 .titulo-m {
@@ -343,9 +346,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: var(--titulo-xl);
 }
 
+
 .titulo-l {
     font-size: var(--titulo-l);
 }
+
 
 .titulo-m {
     font-size: var(--titulo-m);
@@ -356,6 +361,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
 }
+
 
 .subtitulo {
     font-family: 'Fira Sans', sans-serif;
@@ -377,7 +383,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*-- CLASES GENERALES ---*/
 img.img-ancho-completo {
-    max-width: 850px;
+    max-width: 100%;
+}
+
+img.img-ancho-centrado {
+    max-width: 100%;
 }
 
 /*--- Composiciones ---*/
@@ -411,8 +421,10 @@ img.img-ancho-completo {
     gap: 2.4rem;
 }
 
+
 .columna-50 .col-izq,
 .columna-50 .col-der {
+
 
     flex-basis: 0;
     flex-grow: 1;
@@ -525,6 +537,22 @@ hr {
     gap: 2.4rem;
     padding: 4.8rem 2.4rem;
     background-color: var(--morado-lighter);
+    border-radius: 5px;
+    position: relative;
+    max-width: 300px;
+    box-shadow: var(--sombra-tarjeta);
+    flex-basis: 190px;
+    flex-grow: 1;
+}
+
+.tarjeta_m {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 4.8rem 2.4rem;
+    background-color: var(--gris);
     border-radius: 5px;
     position: relative;
     max-width: 300px;

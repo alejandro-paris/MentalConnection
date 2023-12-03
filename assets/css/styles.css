@@ -151,7 +151,6 @@ html {
     line-height: 1.4;
 }
 
-
 body {
     max-width: 1440px;
     background-color: var(--blanco);
@@ -194,15 +193,22 @@ img {
     box-shadow: none;
 }
 
+.btn.desactivado,
+.btn.desactivado:not(.disabled):hover,
+.btn.desactivado:not(.disabled):focus {
+    background: var(--gris);
+    color: var(--gris-oscuro);
+}
+
 .btn.btn-sec,
-.btn.btn-sec:hover,
-.btn.btn-sec:focus {
+.btn.btn-sec:not(.disabled):hover,
+.btn.btn-sec:not(.disabled):focus {
     background: var(--verde-lighter);
     color: var(--verde-darker);
 }
 
-.btn.btn-sec:hover,
-.btn.btn-sec:focus {
+.btn.btn-sec:not(.disabled):hover,
+.btn.btn-sec:not(.disabled):focus {
     outline: 3px solid var(--verde-darker);
 }
 
@@ -211,8 +217,8 @@ img {
     background-color: var(--blanco);
 }
 
-.btn-nav:hover,
-.btn-nav:focus {
+.btn-nav:not(.disabled):hover,
+.btn-nav:not(.disabled):focus {
     background: var(--blanco);
     color: var(--verde-darker);
     outline: 3px solid var(--verde-darker);
@@ -241,6 +247,7 @@ img {
 
 .btn-tab.actual {
     border-bottom: 3px solid var(--morado-darker);
+    border-radius: 0;
 }
 
 /*--- NAVBAR ---*/
@@ -328,12 +335,10 @@ main {
 /*---- Títulos ---*/
 
 h1, h2, h3, h4, h5, h6, p {
-h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 
 }
 
-.titulo-xl,
 .titulo-xl,
 .titulo-l,
 .titulo-m {
@@ -346,11 +351,9 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: var(--titulo-xl);
 }
 
-
 .titulo-l {
     font-size: var(--titulo-l);
 }
-
 
 .titulo-m {
     font-size: var(--titulo-m);
@@ -361,7 +364,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
 }
-
 
 .subtitulo {
     font-family: 'Fira Sans', sans-serif;
@@ -381,13 +383,16 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
 
+p {
+    line-height: 1.6;
+}
+
 /*-- CLASES GENERALES ---*/
 img.img-ancho-completo {
     max-width: 100%;
 }
-
 img.img-ancho-centrado {
-    max-width: 100%;
+    max-width: 850px;
 }
 
 /*--- Composiciones ---*/
@@ -421,10 +426,8 @@ img.img-ancho-centrado {
     gap: 2.4rem;
 }
 
-
 .columna-50 .col-izq,
 .columna-50 .col-der {
-
 
     flex-basis: 0;
     flex-grow: 1;
@@ -545,22 +548,6 @@ hr {
     flex-grow: 1;
 }
 
-.tarjeta_m {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 2.4rem;
-    padding: 4.8rem 2.4rem;
-    background-color: var(--gris);
-    border-radius: 5px;
-    position: relative;
-    max-width: 300px;
-    box-shadow: var(--sombra-tarjeta);
-    flex-basis: 190px;
-    flex-grow: 1;
-}
-
 .tarjeta .tipo {
     background-color: var(--morado-darker);
     color: var(--blanco);
@@ -652,9 +639,72 @@ img.img-comillas {
     align-items: center;
 }
 
-.tarjeta-plan-home .col-izq {
+.tarjeta-plan-home .col-izq,
+.tarjeta-plan-home .col-der {
     flex-basis: 150px;
 }
+
+/*--- Quienes somos ---*/
+.tarjeta_m {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 4.8rem 2.4rem;
+    background-color: var(--gris);
+    border-radius: 5px;
+    position: relative;
+    min-width: 190px;
+    max-width: 250px;
+    box-shadow: var(--sombra-tarjeta);
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.tarjeta-profesional {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--morado-lighter);
+    max-width: 750px;
+}
+
+.tarjeta-profesional .col-izq {
+    flex-basis: 0;
+    flex-grow: 2;
+}
+.tarjeta-profesional .col-izq .contenedor-img {
+    overflow: hidden;
+    height: 100%;
+    max-width: 300px;
+}
+.tarjeta-profesional .col-izq .descripcion {
+    padding: 1rem;
+}
+
+.tarjeta-profesional .col-der {
+    display: flex;
+    padding: 2.4rem;
+    gap: 1.6rem;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 3;
+}
+
+.tarjeta-profesional .col-der ul {
+    margin: 0;
+}
+
+.testimonios .tarjeta .contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    flex-flow: column-reverse;
+    align-items: center;
+}
+
 
 
 /*-- Footer --*/
@@ -768,7 +818,7 @@ margin-bottom: 1.5rem;
 .tarjetas-planes {
     display: flex;
     flex-wrap: wrap;
-    gap: 8.0rem;
+    gap: 8.0rem 4rem;
     justify-content: center;
 }
 
@@ -809,8 +859,11 @@ margin-bottom: 1.5rem;
 /* Query para cambiar en móvil automáticamente todas las medidas en rem */
 @media (max-width:450px) or (max-height:450) {
 
+    :root  {
+        --padding-lateral: 3.4rem
+    }
     html {
-        font-size: 7px;
+        font-size: 8px;
     }
 
     .redes-sociales {

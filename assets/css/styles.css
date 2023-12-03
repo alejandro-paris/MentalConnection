@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-Bold.woff2') format('woff2');
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-BoldItalic.woff2') format('woff2');
+    src: url('../fonts/Poppins-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-Italic.woff2') format('woff2');
+    src: url('../fonts/Poppins-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-Regular.woff2') format('woff2');
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('/assets/fonts/FiraSans-BoldItalic.woff2') format('woff2');
+    src: url('../fonts/FiraSans-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('/assets/fonts/FiraSans-Regular.woff2') format('woff2');
+    src: url('../fonts/FiraSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('/assets/fonts/FiraSans-Italic.woff2') format('woff2');
+    src: url('../fonts/FiraSans-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('/assets/fonts/FiraSans-Bold.woff2') format('woff2');
+    src: url('../fonts/FiraSans-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/assets/fonts/NotoSerif-Bold.woff2') format('woff2');
+    src: url('../fonts/NotoSerif-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/assets/fonts/NotoSerif-BoldItalic.woff2') format('woff2');
+    src: url('../fonts/NotoSerif-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/assets/fonts/NotoSerif-Italic.woff2') format('woff2');
+    src: url('../fonts/NotoSerif-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
     font-family: 'Noto Serif';
-    src: url('/assets/fonts/NotoSerif-Regular.woff2') format('woff2');
+    src: url('../fonts/NotoSerif-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -442,7 +442,7 @@ img.img-ancho-centrado {
 /*-- ELEMENTOS --*/
 /*HR*/
 hr {
-    background-image: url(/assets/img/separador.svg);
+    background-image: url(../img/separador.svg);
     width: 100%;
     height: 4px;
     background-repeat: round;
@@ -498,7 +498,7 @@ hr {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-image: url(/assets/img/flecha_apuntar_cta.svg);
+    background-image: url(../img/flecha_apuntar_cta.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
